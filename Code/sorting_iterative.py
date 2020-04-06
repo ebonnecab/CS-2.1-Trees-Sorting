@@ -58,12 +58,12 @@ def insertion_sort(items):
     n = len(items)
     for i in range(1, n):
         curr = items[i]
-
         while i > 0 and items[i-1] > curr:
             items[i] = items[i-1]
             i-=1
         items[i] = curr
     return items
+    
 if __name__ == '__main__':
     test_arr = [1,2,3,4,5,6,2]
     test = is_sorted(test_arr)
